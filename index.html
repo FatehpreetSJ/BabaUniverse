@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Investment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Stock Market Investment</h1>
+    </header>
+    <main>
+        <section id="investment-info">
+            <h2>About Stock Market Investment</h2>
+            <p>Investing in the stock market can yield significant returns over time... (detailed information about investment strategies and market analysis)</p>
+        </section>
+        <section id="legal-compliance">
+            <h2>Indian Legal Compliance Requirements</h2>
+            <ul>
+                <li>Investment registration with SEBI.</li>
+                <li>Compliance with the Companies Act, 2013.</li>
+                <li>Tax compliance under the Income Tax Act.</li>
+                <li>Adherence to the Prevention of Money Laundering Act (PMLA).</li>
+                <li>Ensure proper KYC for investors.</li>
+            </ul>
+        </section>
+        <section id="qr-code">
+            <h2>Investment QR Code</h2>
+            <div id="qrcode"></div>
+            <script>
+                var qrcode = new QRCode(document.getElementById("qrcode"), {
+                    text: "https://your-investment-link.com",
+                    width: 128,
+                    height: 128,
+                });
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Stock Market Investments. All rights reserved.</p>
+    </footer>
+</body>
+</html>
